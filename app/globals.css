@@ -18,4 +18,64 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+    flex-grow: 1;
+    width: 100%;
+
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.content {
+  width: 70%;
+  padding: 40px;
+}
+
+.customer-card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  height: auto;
+}
+
+.customer-card.selected {
+  background-color: rgb(60, 56, 56);
+}
+
+.customer-list {
+  overflow-y: auto;
+}
+
+.customer-details {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.customer-details h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.photo-grid .photo {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
 }
